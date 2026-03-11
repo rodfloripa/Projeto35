@@ -3,7 +3,7 @@
 
 ---
 
-<p align="justify"><h3>1. A Teoria: Interferência de Conhecimento e o "Squeezing Effect"</h3></p>
+<p align="justify"><h3>1. <a href="https://openreview.net/forum?id=tPNHOoZFl9">Learning Dynamics of LLM Finetuning" (ICLR 2025)</a>: Interferência de Conhecimento e o "Squeezing Effect"</h3></p>
 
 <p align="justify">O artigo explora como o treinamento altera a "geometria" das probabilidades do modelo. No <b>SFT (Supervised Fine-Tuning)</b>, ocorre um fenômeno de "puxar para cima": ao aprender um fato novo, o modelo pode aumentar indevidamente a confiança em fatos semanticamente próximos, gerando alucinações em perguntas não relacionadas.</p>
 
