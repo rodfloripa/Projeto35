@@ -49,4 +49,3 @@ dpo_trainer = DPOTrainer(
 
 ---
 
-<p align="justify"><b>Rodney, agora que unificamos a teoria do "Squeezing Effect" com a prática do código, você gostaria que eu gerasse o arquivo <code>pyproject.toml</code> para garantir que essas versões específicas das bibliotecas rodem perfeitamente no seu Ubuntu com Poetry?</b></p>
