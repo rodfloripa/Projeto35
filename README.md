@@ -18,8 +18,8 @@ A) SFT com Early Stopping (Ancoragem Factual):
 ```python
 training_args = TrainingArguments(
     output_dir="./sft_results",
-    max_steps=15, 
-    learning_rate=1e-3,
+    max_steps=800, 
+    learning_rate=2e-5,
     logging_steps=1,
     report_to="none",
     disable_tqdm=True
@@ -34,7 +34,7 @@ B) Baixa Taxa de Aprendizado e Adaptação Seletiva (LoRA):
 # Filtro LoRA para proteção do conhecimento prévio
 config = LoraConfig(
     r=8,
-    lora_alpha=16,
+    lora_alpha=32,
     target_modules=["q_proj", "v_proj"],
     task_type="CAUSAL_LM")
 ```
