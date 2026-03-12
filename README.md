@@ -43,9 +43,7 @@ dpo_trainer = DPOTrainer(
 
 <p align="justify"><b>Detalhe Técnico:</b> O parâmetro <b>Beta</b> controla a força da penalidade. Manter `beta=0.1` é a "mágica" que impede o colapso do vocabulário. Um Beta muito alto causaria o esmagamento da probabilidade para tokens genéricos; um Beta moderado permite que a massa de probabilidade migre suavemente da resposta rejeitada para a escolhida.</p>
 
-<p align="justify"><b>C) Monitoramento de Reward Margins e Logps:</b></p>
 
-<p align="justify">Durante a execução, o código monitora a <b>Margem de Recompensa</b>. Se a estratégia for bem-sucedida, a diferença de probabilidade entre "Marie Curie" (escolhida) e "Einstein" (rejeitada) aumenta gradualmente nos logs, sem que as probabilidades absolutas dos outros tokens (Logps) colapsem. Isso garante que a resposta final seja corrigida ("Marie Curie ") em vez de degenerada.</p>
 
 ---
 
