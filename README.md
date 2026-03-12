@@ -28,20 +28,7 @@ sft_config = TrainingArguments(
 
 <p align="justify"><b>Detalhe Técnico:</b> O uso de um número controlado de passos (`max_steps=100`) serve para interromper o treino antes da convergência total. Segundo o artigo, isso evita que a distribuição de probabilidade se torne "pontiaguda" demais, o que reduziria a flexibilidade do modelo para ajustes posteriores.</p>
 
-<p align="justify"><b>B) DPO com Beta Moderado (Proteção do Vocabulário):</b></p>
 
-```python
-dpo_trainer = DPOTrainer(
-    model,
-    ref_model,
-    beta=0.1, 
-    train_dataset=dpo_dataset,
-    args=dpo_config,
-)
-
-```
-
-<p align="justify"><b>Detalhe Técnico:</b> O parâmetro <b>Beta</b> controla a força da penalidade. Manter `beta=0.1` é a "mágica" que impede o colapso do vocabulário. Um Beta muito alto causaria o esmagamento da probabilidade para tokens genéricos; um Beta moderado permite que a massa de probabilidade migre suavemente da resposta rejeitada para a escolhida.</p>
 
 
 
