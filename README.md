@@ -18,7 +18,7 @@ A) SFT com Early Stopping (Ancoragem Factual):
 ```python
 training_args = TrainingArguments(
     output_dir="./sft_results",
-    max_steps=5, 
+    max_steps=15, 
     learning_rate=1e-3,
     logging_steps=1,
     report_to="none",
