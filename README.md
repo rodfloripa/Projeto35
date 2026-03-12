@@ -13,7 +13,7 @@ Detalhes do Código: Implementação das Defesas
 
 A) SFT com Early Stopping (Ancoragem Factual):
 
-<p align="justify">O uso de um número controlado de passos (max_steps) serve para interromper o treino antes da convergência total. Segundo o artigo, isso evita que a distribuição de probabilidade se torne pontiaguda demais, o que reduziria a flexibilidade do modelo para ajustes posteriores e preserva a massa de probabilidade distribuída, mantendo a fluidez natural da linguagem.</p>
+<p align="justify">O uso de um número controlado de passos (max_steps) serve para interromper o treino antes da convergência total. Segundo o artigo, isso evita que a distribuição de probabilidade se torne pontiaguda demais, o que reduziria a flexibilidade do modelo para ajustes posteriores e preserva a massa de probabilidade distribuída, mantendo a fluidez natural da linguagem. Com 800 passos e uma taxa de aprendizado bem baixa (2e-5), ainda estamos praticando um tipo de "parada precoce" porque não está deixando o modelo chegar ao overfitting total (convergência total), mas de uma forma muito mais estável.</p>
 
 ```python
 training_args = TrainingArguments(
@@ -39,7 +39,10 @@ config = LoraConfig(
     task_type="CAUSAL_LM")
 ```
 
-
+Aqui está a comparação detalhada dos parâmetros:
+<p align="center">
+  <img src="https://github.com/rodfloripa/Projeto35/blob/main/tab1.png">
+</p>
 
 ---
 
