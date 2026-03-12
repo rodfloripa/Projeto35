@@ -1,5 +1,5 @@
 
-Obs: O arquivo Artigo_LLM-.ipynb não renderiza aqui,baixe e abra no colab
+Obs: O arquivo Artigo_LLM-.ipynb não renderiza aqui,baixe e abra no seu visualizador
 
 ---
 
