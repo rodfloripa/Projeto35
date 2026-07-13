@@ -43,6 +43,11 @@ Aqui está a comparação detalhada dos parâmetros:
 <p align="center">
   <img src="https://github.com/rodfloripa/Projeto35/blob/main/tab1.png">
 </p>
-
+<p align="center">
+  <img src="https://github.com/rodfloripa/Projeto35/blob/main/fig1.png">
+</p>
+<p align="center">
+  <img src="https://github.com/rodfloripa/Projeto35/blob/main/fig2.png">
+</p>
 ---
 
