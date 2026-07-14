@@ -51,3 +51,13 @@ Aqui está a comparação detalhada dos parâmetros:
 </p>
 ---
 
+## 5. Conclusão
+
+<p align="justify">
+Os resultados obtidos demonstram que as estratégias propostas no artigo exerceram impacto significativo sobre a estabilidade e a qualidade do ajuste fino do modelo de linguagem. No cenário sem as melhorias, o treinamento foi realizado com uma taxa de aprendizado elevada, poucas iterações e parâmetros de inferência altamente estocásticos, produzindo respostas inconsistentes e alucinações evidentes, mesmo para uma tarefa simples de memorização. Em contraste, a configuração baseada nas recomendações do artigo promoveu uma convergência gradual da função de perda, aumento consistente da acurácia dos tokens e redução da entropia, indicando um processo de aprendizagem mais estável e eficiente.</p>
+
+<p align="justify">
+Além das métricas de treinamento, a comparação qualitativa evidencia que o modelo passou a recuperar corretamente o conhecimento presente no conjunto de treinamento, respondendo de forma coerente à pergunta proposta. Esse comportamento demonstra que a combinação de uma taxa de aprendizado reduzida, maior número de etapas de treinamento, parâmetros de geração conservadores e configuração adequada do LoRA favorece a fixação das informações durante o processo de Fine-Tuning Supervisionado (SFT), reduzindo significativamente a ocorrência de alucinações.</p>
+
+<p align="justify">
+Dessa forma, o experimento confirma que pequenas modificações na configuração do treinamento podem produzir ganhos expressivos na qualidade das respostas geradas por modelos compactos, como o TinyLlama. Os resultados reforçam que a correta definição dos hiperparâmetros é tão importante quanto a arquitetura utilizada, tornando o processo de ajuste fino mais confiável para aplicações reais que exigem precisão, consistência e baixa taxa de erros factuais.</p>
